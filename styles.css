@@ -104,7 +104,7 @@ header h1 {
 }
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .navbar .menu-icon {
+    .navbar .menu{
         display: block; /* Show the hamburger icon on mobile */
     }
 
