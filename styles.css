@@ -102,6 +102,31 @@ header h1 {
     margin: 0;
     font-size: 2.5rem;
 }
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar .menu-icon {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+
+    .navbar .menu {
+        display: none; /* Hide the menu by default on mobile */
+        width: 100%;
+        background-color: #774848;
+        position: absolute;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar #toggler:checked ~ .menu {
+        display: flex; /* Show the menu when the checkbox is checked */
+    }
+}
 
 .navbar {
     display: flex;
